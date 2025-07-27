@@ -43,7 +43,6 @@ module.exports = {
 
 		const file = new AttachmentBuilder(`./images/${cat}/${upload}`);
 		const catEmbed = new EmbedBuilder()
-			.setTitle('Kitty')
 			.setImage(`attachment://${upload}`);
 
 		await interaction.followUp({ embeds: [catEmbed], files: [file] });
